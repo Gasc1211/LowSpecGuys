@@ -1,0 +1,10 @@
+
+.grid_element {
+      display: grid;
+      gap: 1rem, 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+}
+  
+#masterpiece {
+    background-color: white;
+}
