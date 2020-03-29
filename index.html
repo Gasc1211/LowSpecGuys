@@ -4,35 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxanium&display=swap">
     <title>LowSpecGuys</title>
+    <style>
+        @import url('./index.css');
+        @import url('./base.css');
+        @import url('./basic_grid.css');
+    </style>
 </head>
-<body bgcolor="#000000" link="#ffffff" vlink="#ffffff" alink="#999999">
-    <div id="logo">
-        <image src="images/background.png" alt="logo.png" align="left" width="25%"></image>
-    </div>
-    <header>
-        <table cellpadding="10px" cellspacing="0px" width="100%" >
-            <tr>
-                <th scope="col"><a href="about.html" target="frame">About us</a></th>
-                <th scope="col"><a href="lsg.html" target="frame">The LowSpecGamer</a></th>
-                <th scope="col"><a href="games.html" target="frame">Games</a></th>
-                <th scope="col"><a href="events.html" target="frame">Events</a></th>
-                <th scope="col"><a href="masterpiece.html" target="frame">Drawing(SVG)</a></th>
-                <th scope="col"><a href="contact.html" target="frame">Contact</a></th>
-                <th scope="col" width="35%"></th>
-                <th scope="col"><a href="https://neutrovertido.github.io/web-bosson/" target="_blank"><img src="images/pcgamer.png" alt="pc gaming" width="25px" height="25px"></a></th>
-                <th scope="col"><a href="https://www.youtube.com/channel/UCFOEpMh8vur4k5SuXH--WOQ" target="_blank"><img src="images/youtube-32.png" alt="youtube" width="25px"></a></th>
-                <th scope="col"><a href="https://www.facebook.com/groups/2881753291868641/" target="_blank"><img src="images/facebook-6-32.png" alt="facebook" width="25px"></a></th>
-                <th scope="col"><a href="https://github.com/Gasc1211/LowSpecGuys" target="_blank"><img src="images/github-6-32.png" alt="github" width="25px"></a></th>
-                <th scope="col"><a href="https://soundcloud.com/bks_be4t5" target="_blank"><img src="images/soundcloud-4-32.png" alt="soundcloud" width="25px"></a></th>
-                <th scope="col"><a href="https://open.spotify.com/playlist/2p0ejyATaD1sKavAphZiWi?si=ln06Uk4ITj-KUlaiV70-Eg" target="_blank"><img src="images/spotify-32.png" alt="spotify" width="25px"></a></th>
-            </tr>
-        </table>
-    </header>
-    <main>
-        <iframe id="main_frame" name="frame" src="about.html" frameborder="0" width="98%" height="455px" align="right"></iframe>
-    </main>
+<body>
+    <section class="basic-grid">
+        <div class="grid_items">
+            <image id="logo" src="./images/background.png" alt="logo.png"></image>
+        </div>
+        <div class="grid_items">
+            <table id="menubar">
+                <tr>
+                    <th scope="col"><a href="about.html" target="frame">About us</a></th>
+                    <th scope="col"><a href="lsg.html" target="frame">The LowSpecGamer</a></th>
+                    <th scope="col"><a href="games.html" target="frame">Games</a></th>
+                    <th scope="col"><a href="events.html" target="frame">Events</a></th>
+                    <th scope="col"><a href="masterpiece.html" target="frame">Drawing(SVG)</a></th>
+                    <th scope="col"><a href="contact.html" target="frame">Contact</a></th>
+                </tr>
+            </table>
+        </div>
+        <div class="grid_items">
+            <table id="socialmediabar">
+                <tr>
+                    <th scope="col"><a href="https://neutrovertido.github.io/web-bosson/" target="_blank"><img src="images/pcgamer.png" alt="pc gaming" width="25px" height="25px"></a></th>
+                    <th scope="col"><a href="https://www.youtube.com/channel/UCFOEpMh8vur4k5SuXH--WOQ" target="_blank"><img src="images/youtube-32.png" alt="youtube" width="25px"></a></th>
+                    <th scope="col"><a href="https://www.facebook.com/groups/2881753291868641/" target="_blank"><img src="images/facebook-6-32.png" alt="facebook" width="25px"></a></th>
+                    <th scope="col"><a href="https://github.com/Gasc1211/LowSpecGuys" target="_blank"><img src="images/github-6-32.png" alt="github" width="25px"></a></th>
+                    <th scope="col"><a href="https://soundcloud.com/bks_be4t5" target="_blank"><img src="images/soundcloud-4-32.png" alt="soundcloud" width="25px"></a></th>
+                    <th scope="col"><a href="https://open.spotify.com/playlist/2p0ejyATaD1sKavAphZiWi?si=ln06Uk4ITj-KUlaiV70-Eg" target="_blank"><img src="images/spotify-32.png" alt="spotify" width="25px"></a></th>
+                </tr>
+            </table>
+        </div>
+        <div class="grid_items">
+            <iframe id="main_frame" name="frame" src="about.html"></iframe>
+        </div>
+    </section>
 </body>
 </html>

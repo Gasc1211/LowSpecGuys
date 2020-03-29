@@ -1,10 +1,33 @@
-
-.grid_element {
-      display: grid;
-      gap: 1rem, 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+.grid_items {
+	display: flex;
+	flex-direction: column;
 }
-  
-#masterpiece {
-    background-color: white;
+
+.basic-grid {
+    display: grid;
+    gap: 1rem;
+    
+    grid-template-areas:
+        "logo ."
+        "menu link"
+        "main main";
+
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+}
+
+.grid_items:nth-child(1) {
+    grid-area: logo;
+}
+
+.grid_items:nth-child(2) {
+    grid-area: menu;
+}
+
+.grid_items:nth-child(3) {
+    grid-area: link;
+}
+
+.grid_items:nth-child(4) {
+    grid-area: main;
 }
