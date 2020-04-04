@@ -1,0 +1,28 @@
+body {
+    background-color: #232323;
+}
+
+.grid_items {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    
+    grid-template-areas: "drawing caption";
+
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+}
+
+.grid_items:nth-child(1) {
+    grid-area: caption;
+}
+
+.grid_items:nth-child(2) {
+    grid-area: drawing;
+}
