@@ -10,3 +10,27 @@ div, header, footer {
 a {
 	text-decoration: none;
 }
+
+.indexes {
+	transition: transform 50ms ease-in-out;
+}
+
+.indexes:hover {
+	transform: scale(1.2);
+	transition: transform 50ms ease-in-out;
+}
+
+.indexes a:hover {
+	color: aqua;
+	font-weight: bold;
+}
+
+.linkimg {
+	transition: filter 300ms ease-in-out;
+	filter: grayscale(1);
+}
+
+.linkimg:hover {
+	transition: filter 300ms ease-in-out;
+	filter: grayscale(0);
+}
