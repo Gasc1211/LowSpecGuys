@@ -24,3 +24,13 @@ a {
 	color: aqua;
 	font-weight: bold;
 }
+
+.linkimg {
+	transition: filter 300ms ease-in-out;
+	filter: grayscale(1);
+}
+
+.linkimg:hover {
+	transition: filter 300ms ease-in-out;
+	filter: grayscale(0);
+}
